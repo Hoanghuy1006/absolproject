@@ -35,7 +35,7 @@ class SoftToy extends CI_Controller {
 
 			foreach ($arProductBase as $key => $value) {
 				if (strpos(strtoupper($value['name']), strtoupper($infoSearch)) !== false) {
-					// $arProductResult[] = $value;
+					$arProductResult[] = $value;
 				}
 			}
 			foreach ($arProductResult as $key => $value) {
