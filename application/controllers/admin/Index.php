@@ -9,7 +9,7 @@ class Index extends CI_Controller {
 
 	public function index()
 	{	// loi 
-		if ($this->session->userdata('account') && $this->session->userdata('account')['isAdmin'] == 0 ) {
+		if ($this->session->userdata('account') && $this->session->userdata('account')['isAdmin'] == 1 ) {
 			$this->load->view('/admin/template/main');
 		}else {
 			redirect('Index','refresh');
