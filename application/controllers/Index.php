@@ -14,7 +14,7 @@ class Index extends CI_Controller {
 		$homePagePoster = $this->Index_model->GetHomePagePoster();
 		$data = array('homePageVideo' => $homePageVideo, 'homePagePoster' => $homePagePoster);
 		// loi load trang chu
-		// $this->load->view('homePage_view',$data,FALSE);
+		 $this->load->view('homePage_view',$data,FALSE);
 	}
 	public function UpdateHomePagePoster()
 	{	
